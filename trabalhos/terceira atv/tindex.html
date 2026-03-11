@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="tstyle.css">
+</head>
+<body>
+
+    <h1>Cadastro de Alunos</h1>
+
+    <!-- Formulário -->
+    <form>
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Idade:</label>
+            <input type="number" name="idade">
+
+            <label>Curso:</label>
+            <select name="curso">
+                <option>Engenharia de Software</option>
+                <option>Sistemas de Informação</option>
+                <option>Ciência da Computação</option>
+            </select>
+
+            <label>Turno:</label>
+            <input type="radio" name="turno" value="manha"> Manhã
+            <input type="radio" name="turno" value="noite"> Noite
+
+            <br><br>
+
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Tabela -->
+    <h2>Lista de Alunos</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Idade</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td>ana@email.com</td>
+                <td>22</td>
+                <td>Engenharia de Software</td>
+            </tr>
+
+            <tr>
+                <td>Carlos Souza</td>
+                <td>carlos@email.com</td>
+                <td>25</td>
+                <td>Sistemas de Informação</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
