@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos - Tailwind</title>
+
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-4xl mx-auto mt-10 p-6">
+
+    <h1 class="text-3xl font-bold text-center mb-6">
+        Cadastro de Alunos
+    </h1>
+
+    <!-- Formulário -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+
+        <h2 class="text-xl font-semibold mb-4">
+            Dados do Aluno
+        </h2>
+
+        <form class="space-y-4">
+
+            <div>
+                <label class="block font-medium">Nome:</label>
+                <input type="text"
+                       class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       required>
+            </div>
+
+            <div>
+                <label class="block font-medium">Email:</label>
+                <input type="email"
+                       class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       required>
+            </div>
+
+            <div>
+                <label class="block font-medium">Idade:</label>
+                <input type="number"
+                       class="w-full border rounded px-3 py-2">
+            </div>
+
+            <div>
+                <label class="block font-medium">Curso:</label>
+                <select class="w-full border rounded px-3 py-2">
+                    <option>Engenharia de Software</option>
+                    <option>Sistemas de Informação</option>
+                    <option>Ciência da Computação</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block font-medium mb-2">Turno:</label>
+
+                <div class="flex gap-6">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="turno">
+                        Manhã
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="turno">
+                        Noite
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+                Cadastrar
+            </button>
+
+        </form>
+    </div>
+
+    <!-- Tabela -->
+    <h2 class="text-2xl font-bold mt-10 mb-4">
+        Lista de Alunos
+    </h2>
+
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow rounded-lg overflow-hidden">
+
+            <thead class="bg-gray-800 text-white">
+                <tr>
+                    <th class="py-3 px-4 text-left">Nome</th>
+                    <th class="py-3 px-4 text-left">Email</th>
+                    <th class="py-3 px-4 text-left">Idade</th>
+                    <th class="py-3 px-4 text-left">Curso</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="border-b hover:bg-gray-100">
+                    <td class="py-3 px-4">Ana Silva</td>
+                    <td class="py-3 px-4">ana@email.com</td>
+                    <td class="py-3 px-4">22</td>
+                    <td class="py-3 px-4">Engenharia de Software</td>
+                </tr>
+
+                <tr class="hover:bg-gray-100">
+                    <td class="py-3 px-4">Carlos Souza</td>
+                    <td class="py-3 px-4">carlos@email.com</td>
+                    <td class="py-3 px-4">25</td>
+                    <td class="py-3 px-4">Sistemas de Informação</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
